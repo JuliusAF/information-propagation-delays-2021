@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+## Calibrating the Performance and Security of Blockchains via Information Propagation Delays
 
-You can use the [editor on GitHub](https://github.com/JuliusAF/information-propagation-delays-2021/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Miners of a blockchain exchange information about blocks and
+transactions with one another via a peer-to-peer (P2P) network.
+The speed at which they learn of new blocks and transactions in the
+network determines the likelihood of forks in the chain, which in
+turn has implications for the efficiency as well as security of proof-
+of-work (PoW) blockchains. Despite the importance of information
+propagation delays in a blockchain’s peer-to-peer network, little is
+known about them. The last known empirical study was conducted,
+for instance, by Decker and Wattenhofer in 2013.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this paper, we revisit the work of Decker and Wattenhofer on
+information propagation delays in Bitcoin. We update their mea-
+surement methodology to accommodate the changes made to the
+P2P network protocols since 2013. We also expand our measure-
+ment effort to include three other widely used blockchains, namely
+Bitcoin Cash, Litecoin, and Dogecoin. We reveal that block propa-
+gation delays have drastically reduced since 2013: The majority of
+peers in all four blockchains learn of a newly mined block within
+one second; the likelihood of forks is, consequently, low. Though
+blockchains networks have become quite efficient (i.e., have low
+delays), we observe that a significant number of nodes of these
+blockchains are present in cloud-provider networks and, more im-
+portantly, state-owned network providers; such deployments have
+crucial security implications for blockchains.
 
-### Markdown
+### Source code
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JuliusAF/information-propagation-delays-2021/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The source code for the modified observer nodes and helper scripts can be found [here](https://github.com/JuliusAF/information-propagation-delays-2021), which is hosted on Github. The observer nodes are modified full nodes for each respective blockchain and were forked in April 2021. These nodes have therefore not seen development since that time, and any issues that may have been found in the parent applications since then have not been fixed. These nodes were run on Ubuntu 16.04.
