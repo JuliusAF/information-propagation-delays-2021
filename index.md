@@ -1,5 +1,3 @@
-## Calibrating the Performance and Security of Blockchains via Information Propagation Delays
-
 Miners of a blockchain exchange information about blocks and
 transactions with one another via a peer-to-peer (P2P) network.
 The speed at which they learn of new blocks and transactions in the
