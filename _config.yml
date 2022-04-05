@@ -1,1 +1,4 @@
 theme: jekyll-theme-slate
+
+title: Calibrating the Performance and Security of Blockchains via Information Propagation Delays
+description: A measurement study looking at the efficiency of peer-to-peer networks underlying blockchains, and how these affect the performance and security of the blockchain.
